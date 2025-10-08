@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Titanic Predictor</title>
+  </head>
+  <body>
+    <h1>Titanic Survival Predictor</h1>
+    <form id="predict-form">
+      <label>Pclass:
+  <select name="Pclass">
+    <option value="1">1 — 1st class</option>
+    <option value="2">2 — 2nd class</option>
+    <option value="3" selected>3 — 3rd class</option>
+  </select>
+</label>
+
+      <label>Sex (male/female): <input name="Sex" value="male"></label><br>
+      <label>Age: <input name="Age" value="30" type="number"></label><br>
+      <label>Fare: <input name="Fare" value="7.25" type="number" step="0.01"></label><br>
+      <label>Embarked (C/Q/S): <input name="Embarked" value="S"></label><br>
+      <button type="submit">Predict</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="/static/predict.js"></script>
+  </body>
+</html>
